@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo2 from "../image/Logo2.png";
-import NonoRere6 from "../image/NonoRere6.png";
+import NonoRere11 from "../image/NonoRere11.png";
 import Gambar from "../image/Gambar.png";
 import Inet from "../image/Inet.png";
 import WA from "../image/WA.png";
@@ -10,18 +9,20 @@ import IG from "../image/IG.png";
 import FB from "../image/FB.png";
 import Logo from "../image/Logo.png";
 import Select from "react-select";
+import { ReactComponent as Background4 } from "../assets/Background4.svg";
+import NoreLayanan8 from "../image/NoreLayanan8.png";
+import NonoRere5 from "../image/NonoRere5.png";
+import { Button, Col, Form } from "react-bootstrap";
 
-const options = [
-  { label: "Perusahaan 1", value: "Perusahaan1" },
-  { label: "Perusahaan 2", value: "Perusahaan1" },
-  { label: "Perusahaan 3", value: "Perusahaan1" },
-  { label: "Perusahaan 4", value: "Perusahaan1" },
-  { label: "Perusahaan 5", value: "Perusahaan1" },
-];
-
-const PemWeb6 = () => {
+const Miniprio = () => {
   return (
     <div>
+      <div
+        className="Background4"
+        style={{ position: "absolute", top: 0, zIndex: -1, display: "flex" }}
+      >
+        <Background4 />
+      </div>
       <div className="container7">
         <div
           style={{
@@ -33,15 +34,45 @@ const PemWeb6 = () => {
           }}
         >
           <Link to="/PemWeb5">
-            <p style={{ color: "#319f66" }}> {`< Kembali`}</p>
+            <p style={{ color: "white" }}> {`< Kembali`}</p>
           </Link>
         </div>
-        <div style={{ display: "flex", paddingLeft: 200 }}>
+        <div style={{ display: "flex", paddingLeft: 1000 }}>
           <Link to="/">
-            <img src={Logo2} alt="Logo2" height={150} />
+            <img src={Logo} alt="Logo" height={150} />
           </Link>
         </div>
       </div>
+      <div style={{ display: "flex", paddingLeft: 290 }}>
+        <img src={NoreLayanan8} alt="NoreLayanan8" height={162} width={162} />
+        <div style={{ textAlign: "start", paddingLeft: 50 }}>
+          <h1
+            style={{
+              color: "white",
+              fontFamily: "Poppins",
+              fontWeight: 700,
+              fontSize: "48px",
+            }}
+          >
+            MINI PRIORITAS
+          </h1>
+          <div
+            style={{
+              color: "white",
+              fontFamily: "Poppins",
+              fontWeight: 400,
+              fontSize: "24px",
+            }}
+          >
+            <li>Server dan domain</li>
+            <li>Template website</li>
+            <li>Garansi bug</li>
+            <li>Optimasi mobile</li>
+            <li>Additional Email: 200rb /email /tahun 500MB</li>
+          </div>
+        </div>
+      </div>
+
       <div
         className="container1"
         style={{
@@ -51,6 +82,7 @@ const PemWeb6 = () => {
           fontSize: "26px",
           fontWeight: 600,
           paddingLeft: 75.21,
+          paddingTop: 200,
         }}
       >
         <div>
@@ -71,12 +103,12 @@ const PemWeb6 = () => {
           paddingLeft: 75.21,
         }}
       >
-        <div style={{ width: "45%", textAlign: "start", marginTop: -10 }}>
-          <p>PEMBUATAN WEBSITE LANGGANAN SIMPEL</p>
+        <div style={{ width: "40%", textAlign: "start", marginTop: -10 }}>
+          <p>PEMBUATAN WEBSITE LANGGANAN MINI PRIORITAS</p>
         </div>
 
-        <div style={{ paddingLeft: 725, marginTop: -10 }}>
-          <p>Rp2.000.000</p>
+        <div style={{ paddingLeft: 820, marginTop: -10 }}>
+          <p>Rp3.000.000</p>
         </div>
       </div>
       <div>
@@ -84,11 +116,17 @@ const PemWeb6 = () => {
           className="container7"
           style={{ position: "absolute", zIndex: -1 }}
         >
-          <div style={{ paddingLeft: 650, marginTop: -260 }}>
-            <img src={Gambar} alt="Gambar" height={400} />
+          <div style={{ paddingLeft: 600, marginTop: -170 }}>
+            <img
+              src={Gambar}
+              alt="Gambar"
+              height={400}
+              width={499}
+              height={409}
+            />
           </div>
-          <div style={{ paddingLeft: 432, marginTop: -160 }}>
-            <img src={NonoRere6} alt="NonoRere6" />
+          <div style={{ paddingLeft: 300, marginTop: -190 }}>
+            <img src={NonoRere11} alt="NonoRere11" width={480} height={480} />
           </div>
         </div>
         <div>
@@ -112,7 +150,7 @@ const PemWeb6 = () => {
               paddingLeft: 1620,
             }}
           >
-            Rp500.000
+            Rp900.000
           </p>
         </div>
       </div>
@@ -128,130 +166,37 @@ const PemWeb6 = () => {
       >
         <p>Silahkan isi Form untuk melanjutkan pemesanan</p>
       </div>
-      <div
-        style={{
-          paddingLeft: 75.21,
-          fontFamily: "Roboto",
-          fontSize: "20px",
-          fontWeight: 400,
-        }}
-      >
-        <div className="container8" style={{ textAlign: "start" }}>
-          <div>
-            <label>Jenis Desain</label>
-          </div>
-          <div>
-            <Select options={options} placeholder="--Silakan dipilih--" />
-          </div>
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Nama</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: Mark"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Perusahaan/Instansi</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: CV.Nore Inovasi/Personal"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Nama Domain</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: nore.web.id"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Keterangan</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: Warna dasar biru"
-            style={{ padding: 60, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>No. HP</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: 081234567890"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Email</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: mark@example.com"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-      </div>
-      <div style={{ paddingLeft: 1700, paddingTop: 60 }}>
-        <a
-          style={{
-            width: "25%",
-            fontFamily: "Poppins",
-            fontWeight: 600,
-            padding: 13,
-            color: "white",
-            display: "flex",
-            paddingLeft: 40,
-            paddingRight: 80,
-            paddingTop: 10,
-            boxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            WebkitBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            MozBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            borderRadius: "35px 35px 35px 35px",
-            border: "1px solid #319f66",
-            background: "#319f66",
-          }}
-        >
-          Kirim
-        </a>
-      </div>
+      <Form>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Nama</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Perusahaan/Instansi</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Benchmark</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Nama Domain</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Keterangan</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>No. HP</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Form.Group className="mb-5" style={{ display: "flex" }}>
+          <Form.Label>Email</Form.Label>
+          <Form.Control />
+        </Form.Group>
+        <Button style={{ background: "#39B772", color: "white" }}>Kirim</Button>
+      </Form>
       <div className="footer" style={{ color: "white", marginTop: "23%" }}>
         <div className="row">
           <div className="container1">
@@ -400,4 +345,4 @@ const PemWeb6 = () => {
   );
 };
 
-export default PemWeb6;
+export default Miniprio;
