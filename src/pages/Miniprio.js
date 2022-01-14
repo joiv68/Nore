@@ -82,7 +82,7 @@ const Miniprio = () => {
           fontSize: "26px",
           fontWeight: 600,
           paddingLeft: 75.21,
-          paddingTop: 200,
+          paddingTop: 250,
         }}
       >
         <div>
@@ -161,37 +161,93 @@ const Miniprio = () => {
           fontWeight: 700,
           fontSize: "30px",
           paddingLeft: 75.21,
-          paddingTop: 100,
+          paddingTop: 200,
         }}
       >
         <p>Silahkan isi Form untuk melanjutkan pemesanan</p>
       </div>
       <Form>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Nama</Form.Label>
           <Form.Control />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Perusahaan/Instansi</Form.Label>
           <Form.Control />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Benchmark</Form.Label>
           <Form.Control />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Nama Domain</Form.Label>
           <Form.Control />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Keterangan</Form.Label>
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>No. HP</Form.Label>
           <Form.Control />
         </Form.Group>
-        <Form.Group className="mb-5" style={{ display: "flex" }}>
+        <Form.Group
+          className="mb-5"
+          style={{
+            display: "flex",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: 400,
+          }}
+        >
           <Form.Label>Email</Form.Label>
           <Form.Control />
         </Form.Group>
