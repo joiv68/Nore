@@ -117,7 +117,7 @@ const PemWeb3 = () => {
           justifyContent: "center",
         }}
       >
-        <Link to="/PemWeb4">
+        <Link to="/PemWeb4" style={{ textDecoration: "none" }}>
           <Card
             style={{ width: "27rem", alignItems: "center", paddingTop: 30 }}
           >

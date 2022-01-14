@@ -61,7 +61,6 @@ const PemWeb5 = () => {
 
   const settings1 = {
     dots: true,
-    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
   };
@@ -192,9 +191,9 @@ const PemWeb5 = () => {
         }}
       >
         <Slider {...settings}>
-          <div>
+          <div style={{ textAlign: "center" }}>
             <p>PERUSAHAAN 1</p>
-            <img src={Contoh1} alt="Contoh1" width="100%" height="100%" />
+            <img src={Contoh1} alt="Contoh1" width="100%" height={315} />
             <div
               style={{
                 display: "flex",
@@ -231,7 +230,7 @@ const PemWeb5 = () => {
           </div>
           <div>
             <p>PERUSAHAAN 2</p>
-            <img src={Contoh2} alt="Contoh2" width="100%" height="100%" />
+            <img src={Contoh2} alt="Contoh2" width="100%" height={315} />
             <div
               style={{
                 display: "flex",
@@ -268,7 +267,7 @@ const PemWeb5 = () => {
           </div>
           <div>
             <p style={{ paddingRight: 60 }}>PERUSAHAAN 3</p>
-            <img src={Contoh3} alt="Contoh3" width="100%" height="100%" />
+            <img src={Contoh3} alt="Contoh3" width="100%" height={315} />
             <div
               style={{
                 display: "flex",
@@ -305,7 +304,7 @@ const PemWeb5 = () => {
           </div>
           <div>
             <p style={{ paddingRight: 40 }}>PERUSAHAAN 4</p>
-            <img src={Contoh4} alt="Contoh4" width="100%" height="100%" />
+            <img src={Contoh4} alt="Contoh4" width="100%" height={315} />
             <div
               style={{
                 display: "flex",
@@ -321,8 +320,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -335,8 +332,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -346,7 +341,7 @@ const PemWeb5 = () => {
           </div>
           <div>
             <p style={{ paddingRight: 70 }}>PERUSAHAAN 5</p>
-            <img src={Contoh5} alt="Contoh5" width="100%" height="100%" />
+            <img src={Contoh5} alt="Contoh5" width="100%" height={315} />
             <div
               style={{
                 display: "flex",
@@ -362,8 +357,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -376,8 +369,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -458,8 +449,6 @@ const PemWeb5 = () => {
                   borderRadius: 20,
                   justifyContent: "center",
                   border: "0px",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                 }}
               >
                 Pesan
@@ -471,8 +460,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -497,8 +484,6 @@ const PemWeb5 = () => {
                   borderRadius: 20,
                   justifyContent: "center",
                   border: "0px",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                 }}
               >
                 Pesan
@@ -510,8 +495,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -536,8 +519,6 @@ const PemWeb5 = () => {
                   borderRadius: 20,
                   justifyContent: "center",
                   border: "0px",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                 }}
               >
                 Pesan
@@ -549,8 +530,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -575,8 +554,6 @@ const PemWeb5 = () => {
                   borderRadius: 20,
                   justifyContent: "center",
                   border: "0px",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                 }}
               >
                 Pesan
@@ -588,8 +565,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -614,8 +589,6 @@ const PemWeb5 = () => {
                   borderRadius: 20,
                   justifyContent: "center",
                   border: "0px",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                 }}
               >
                 Pesan
@@ -627,8 +600,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 15,
-                  paddingRight: 15,
                   border: "1px solid #272727",
                 }}
               >
@@ -648,8 +619,6 @@ const PemWeb5 = () => {
                 color: "#272727",
                 borderRadius: 20,
                 justifyContent: "center",
-                paddingLeft: 30,
-                paddingRight: 30,
               }}
             >
               Lainnya
@@ -715,8 +684,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -728,8 +695,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -754,8 +719,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -767,8 +730,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -793,8 +754,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -806,8 +765,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -832,8 +789,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -845,8 +800,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -871,8 +824,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -884,8 +835,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -907,8 +856,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 30,
-                  paddingRight: 30,
                 }}
               >
                 Lainnya
@@ -975,8 +922,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -988,8 +933,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1014,8 +957,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1027,8 +968,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1053,8 +992,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1066,8 +1003,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1092,8 +1027,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1105,8 +1038,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1131,8 +1062,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1144,8 +1073,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1167,8 +1094,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 30,
-                  paddingRight: 30,
                 }}
               >
                 Lainnya
@@ -1236,8 +1161,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1249,8 +1172,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1275,8 +1196,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1288,8 +1207,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1314,8 +1231,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1327,8 +1242,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1353,8 +1266,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1366,8 +1277,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1392,8 +1301,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1405,8 +1312,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1428,8 +1333,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 30,
-                  paddingRight: 30,
                 }}
               >
                 Lainnya
@@ -1497,8 +1400,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1510,8 +1411,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1536,8 +1435,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1549,8 +1446,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1575,8 +1470,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1588,8 +1481,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1614,8 +1505,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1627,8 +1516,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1653,8 +1540,6 @@ const PemWeb5 = () => {
                     borderRadius: 20,
                     justifyContent: "center",
                     border: "0px",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                   }}
                 >
                   Pesan
@@ -1666,8 +1551,6 @@ const PemWeb5 = () => {
                     color: "#272727",
                     borderRadius: 20,
                     justifyContent: "center",
-                    paddingLeft: 15,
-                    paddingRight: 15,
                     border: "1px solid #272727",
                   }}
                 >
@@ -1689,8 +1572,6 @@ const PemWeb5 = () => {
                   color: "#272727",
                   borderRadius: 20,
                   justifyContent: "center",
-                  paddingLeft: 30,
-                  paddingRight: 30,
                 }}
               >
                 Lainnya

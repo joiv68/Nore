@@ -288,7 +288,7 @@ const PemWeb4 = () => {
         </CardGroup>
       </div>
       <div style={{ paddingLeft: 950, paddingTop: 30 }}>
-        <Link to="PemWeb5">
+        <Link to="PemWeb5" style={{ textDecoration: "none" }}>
           <a
             style={{
               padding: 10,
@@ -464,7 +464,7 @@ const PemWeb4 = () => {
         </CardGroup>
       </div>
       <div style={{ paddingLeft: 950, paddingTop: 30 }}>
-        <Link to="PemWeb6">
+        <Link to="PemWeb5" style={{ textDecoration: "none" }}>
           <a
             style={{
               padding: 10,
