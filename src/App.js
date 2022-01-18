@@ -13,6 +13,7 @@ import WebLepas from "./pages/WebLepas";
 import PemSystem from "./pages/PemSystem";
 import Mini from "./pages/Mini";
 import Miniprio from "./pages/Miniprio";
+import LayananSI from "./pages/LayananSI";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
             </Route>
             <Route path="/Miniprio">
               <Miniprio />
+            </Route>
+            <Route path="/LayananSI">
+              <LayananSI />
             </Route>
           </Switch>
         </div>

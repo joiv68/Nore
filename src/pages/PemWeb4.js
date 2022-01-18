@@ -235,8 +235,6 @@ const PemWeb4 = () => {
       </div>
       <div
         style={{
-          // alignItems: "center",
-          // width: "50%",
           display: "flex",
           justifyContent: "center",
         }}
@@ -245,8 +243,6 @@ const PemWeb4 = () => {
           style={{
             alignItems: "center",
             width: "50%",
-            // display: "flex",
-            // justifyContent: "center",
           }}
         >
           <Card style={{ borderWidth: 0, alignItems: "center" }}>

@@ -10,14 +10,7 @@ import IG from "../image/IG.png";
 import FB from "../image/FB.png";
 import Logo from "../image/Logo.png";
 import Select from "react-select";
-
-const options = [
-  { label: "Perusahaan 1", value: "Perusahaan1" },
-  { label: "Perusahaan 2", value: "Perusahaan1" },
-  { label: "Perusahaan 3", value: "Perusahaan1" },
-  { label: "Perusahaan 4", value: "Perusahaan1" },
-  { label: "Perusahaan 5", value: "Perusahaan1" },
-];
+import { Button, Form } from "react-bootstrap";
 
 const PemWeb6 = () => {
   return (
@@ -134,123 +127,129 @@ const PemWeb6 = () => {
           fontFamily: "Roboto",
           fontSize: "20px",
           fontWeight: 400,
+          paddingTop: 50,
         }}
       >
-        <div className="container8" style={{ textAlign: "start" }}>
-          <div>
-            <label>Jenis Desain</label>
-          </div>
-          <div>
-            <Select options={options} placeholder="--Silakan dipilih--" />
-          </div>
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Nama</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: Mark"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Perusahaan/Instansi</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: CV.Nore Inovasi/Personal"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Nama Domain</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: nore.web.id"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Keterangan</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: Warna dasar biru"
-            style={{ padding: 60, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>No. HP</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: 081234567890"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-        <div
-          className="container8"
-          style={{ textAlign: "start", paddingTop: 60 }}
-        >
-          <div>
-            <label>Email</label>
-          </div>
-          <input
-            type="text"
-            required
-            placeholder="contoh: mark@example.com"
-            style={{ padding: 10, color: "#B8B8B8" }}
-          />
-        </div>
-      </div>
-      <div style={{ paddingLeft: 1700, paddingTop: 60 }}>
-        <a
-          style={{
-            width: "25%",
-            fontFamily: "Poppins",
-            fontWeight: 600,
-            padding: 13,
-            color: "white",
-            display: "flex",
-            paddingLeft: 40,
-            paddingRight: 80,
-            paddingTop: 10,
-            boxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            WebkitBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            MozBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
-            borderRadius: "35px 35px 35px 35px",
-            border: "1px solid #319f66",
-            background: "#319f66",
-          }}
-        >
-          Kirim
-        </a>
+        <Form>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Jenis Desain
+            </Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Silahkan Pilih -</option>
+              <option value="1">Perusahaan 1</option>
+              <option value="2">Perusahaan 2</option>
+              <option value="3">Perusahaan 3</option>
+              <option value="4">Perusahaan 4</option>
+              <option value="5">Perusahaan 5</option>
+            </Form.Select>
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Nama
+            </Form.Label>
+            <Form.Control placeholder="contoh: Mark" />
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Perusahaan/Instansi
+            </Form.Label>
+            <Form.Control placeholder="contoh: CV.Nore Inovasi / Personal" />
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Nama Domain
+            </Form.Label>
+            <Form.Control placeholder="contoh: nore.web.id" />
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Keterangan
+            </Form.Label>
+            <Form.Control
+              as="textarea"
+              rows={5}
+              placeholder="contoh: Warna dasar biru"
+            />
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              No. HP
+            </Form.Label>
+            <Form.Control placeholder="contoh: 081234567890" />
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+            }}
+          >
+            <Form.Label column sm="2">
+              Email
+            </Form.Label>
+            <Form.Control placeholder="contoh: mark@example.com" />
+          </Form.Group>
+          <Button
+            style={{
+              background: "#39B772",
+              color: "white",
+              justifyItems: "end",
+            }}
+          >
+            Kirim
+          </Button>
+        </Form>
       </div>
       <div className="footer" style={{ color: "white", marginTop: "23%" }}>
         <div className="row">

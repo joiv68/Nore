@@ -15,6 +15,11 @@ import NoreLayanan6 from "../image/NoreLayanan6.png";
 import NoreLayanan7 from "../image/NoreLayanan7.png";
 import Rereteks from "../image/Rereteks.png";
 import NonoRere3 from "../image/NonoRere3.png";
+import { Card } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import CardGroup from "react-bootstrap/CardGroup";
 
 const Mini = () => {
   return (
@@ -43,7 +48,7 @@ const Mini = () => {
         style={{
           color: "#319f66",
           textAlign: "center",
-          width: "70%",
+          width: "90%",
           fontFamily: "Poppins",
           fontSize: "48px",
           fontWeight: 700,
@@ -56,138 +61,151 @@ const Mini = () => {
         <img src={Rereteks} alt="Rereteks" />
       </div>
       <div
-        className="Container3"
         style={{
           justifyItems: "center",
           justifyContent: "center",
           paddingTop: 80,
         }}
       >
-        <div style={{ paddingLeft: 490, paddingTop: 50, zIndex: 1 }}>
-          <div
-            style={{
-              paddingTop: 30,
-              paddingBottom: 30,
-              width: "15%",
-              position: "absolute",
-              fontFamily: "Poppins",
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              justifyContent: "center",
-              borderRadius: "11px 11px 11px 11px",
-              boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-              WebkitBoxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-              MozBoxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-            }}
-          >
-            <img src={NoreLayanan6} alt="NoreLayanan6" />
-            <h1>MINI SIMPEL</h1>
-          </div>
-          <div style={{ paddingLeft: 310 }}>
-            <div
-              style={{
-                width: "12%",
-                display: "flex",
-                flexDirection: "column",
-                MozBoxShadow: "27px 27px 27px 27px",
-                borderRadius: "27px 27px 27px 27px",
-                border: "3px solid #319f66",
-                paddingLeft: 20,
-                paddingRight: 20,
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                <p
-                  style={{
-                    paddingLeft: 10,
-                    paddingBottom: 30,
-                    color: "#319f66",
-                    weight: 400,
-                    fontFamily: "Poppins",
-                    fontSize: "14px",
-                    alignSelf: "flex-end",
-                  }}
-                >
-                  Rp
-                </p>
-                <h1
-                  style={{
-                    color: "#319f66",
-                    weight: 700,
-                    fontFamily: "Poppins",
-                    fontSize: "48px",
-                  }}
-                >
-                  1,2jt
-                </h1>
-              </div>
-              <div style={{ color: "#319f66" }}>
-                <p>tahun pertama</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingLeft: 1000 }}>
-          <div
-            style={{
-              width: "13%",
-              display: "flex",
-              flexDirection: "column",
-              MozBoxShadow: "27px 27px 27px 27px",
-              borderRadius: "27px 27px 27px 27px",
-              border: "3px solid #319f66",
-              position: "absolute",
-              marginTop: -140,
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <p
+        <Container>
+          <Row>
+            <Col md={{ span: 20, offset: 5 }}>
+              <Card
+                style={{ width: "18rem", alignItems: "center", paddingTop: 20 }}
+              >
+                <img
+                  src={NoreLayanan6}
+                  alt="NoreLayanan6"
+                  height={150}
+                  width={150}
+                />
+                <Card.Body>
+                  <Card.Title
+                    style={{
+                      fontFamily: "Poppins",
+                      fontWeight: 600,
+                      fontSize: "32px",
+                      paddingBottom: 40,
+                    }}
+                  >
+                    MINI SIMPLE
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={{ span: 8, offset: 5 }}>
+              <Card
+                border="success"
                 style={{
-                  paddingLeft: 40,
-                  paddingBottom: 30,
-                  color: "#319f66",
-                  weight: 400,
-                  fontFamily: "Poppins",
-                  fontSize: "14px",
-                  alignSelf: "flex-end",
+                  width: "12rem",
+                  borderRadius: 17,
+                  alignItems: "center",
                 }}
               >
-                Rp
-              </p>
-              <h1
+                <Card.Body style={{ display: "flex" }}>
+                  <p
+                    style={{
+                      alignSelf: "flex-end",
+                      color: "#319F66",
+                      fontFamily: "Poppins",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                    }}
+                  >
+                    Rp
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontWeight: 700,
+                      fontSize: "48px",
+                      color: "#319F66",
+                    }}
+                  >
+                    1,2jt
+                  </p>
+                  <p
+                    style={{
+                      alignSelf: "flex-end",
+                      color: "#319F66",
+                      fontFamily: "Poppins",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                    }}
+                  >
+                    tahun pertama
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={{ span: 12, offset: 5 }}>
+              <div
                 style={{
-                  color: "#319f66",
-                  weight: 700,
+                  textAlign: "start",
+                  color: "#999999",
                   fontFamily: "Poppins",
-                  fontSize: "48px",
+                  fontSize: "20px",
+                  fontWeight: 400,
                 }}
               >
-                600rb
-              </h1>
-            </div>
-            <div style={{ color: "#319f66" }}>
-              <p>tahun pertama</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          textAlign: "start",
-          paddingLeft: 815,
-          color: "#999999",
-          fontFamily: "Poppins",
-          fontSize: "20px",
-          fontWeight: 400,
-          paddingTop: 20,
-        }}
-      >
-        <li>Server dan domain</li>
-        <li>Template website</li>
-        <li>Garansi bug</li>
-        <li>Optimasi mobile</li>
-        <li>Additional Email: 200rb /email /tahun 500MB</li>
+                <li>Server dan domain</li>
+                <li>Template website</li>
+                <li>Garansi bug</li>
+                <li>Optimasi mobile</li>
+                <li>Additional Email: 200rb /email /tahun 500MB</li>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+              <Card
+                border="success"
+                style={{
+                  width: "12rem",
+                  borderRadius: 17,
+                  alignItems: "center",
+                }}
+              >
+                <Card.Body style={{ display: "flex" }}>
+                  <p
+                    style={{
+                      alignSelf: "flex-end",
+                      color: "#319F66",
+                      fontFamily: "Poppins",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                    }}
+                  >
+                    Rp
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      fontWeight: 700,
+                      fontSize: "48px",
+                      color: "#319F66",
+                    }}
+                  >
+                    600rb
+                  </p>
+                  <p
+                    style={{
+                      alignSelf: "flex-end",
+                      color: "#319F66",
+                      fontFamily: "Poppins",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                    }}
+                  >
+                    tahun pertama
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <div
         style={{
@@ -199,50 +217,58 @@ const Mini = () => {
       >
         <p>KLIEN KAMI</p>
       </div>
-      <div className="container4">
-        <div style={{ paddingLeft: 500 }}>
-          <img src={Klien} alt="Klien" height={61} />
-        </div>
-        <div style={{ paddingLeft: 480 }}>
-          <img
-            src={Klien1}
-            alt="Klien1"
-            height={61}
-            style={{ backgroundColor: "#A5B3C1" }}
-          />
-        </div>
-        <div style={{ paddingLeft: 480 }}>
-          <img src={Klien2} alt="Klien2" height={61} />
-        </div>
-        <div style={{ paddingLeft: 510 }}>
-          <img src={Klien3} alt="Klien3" height={61} />
-        </div>
-        <div style={{ paddingLeft: 430 }}>
-          <img src={Klien4} alt="Klien4" height={61} />
-        </div>
-      </div>
       <div
-        className="container4"
-        style={{ paddingLeft: 490, fontFamily: "Poppins" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
       >
-        <div>
-          <p> jsmobil.com</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 65 }}>cleanandcool.id</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 135 }}>surgapet.com</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 150 }}>woodsluck.id</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 180, width: "100%" }}>bactakleen-id.com</p>
-        </div>
+        <CardGroup
+          style={{
+            alignItems: "center",
+            width: "50%",
+          }}
+        >
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien} alt="Klien" height={61} width={122} />
+            <Card.Body>
+              <Card.Title>jsmobil.com</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img
+              src={Klien1}
+              alt="Klien1"
+              height={61}
+              width={163}
+              style={{ backgroundColor: "#A5B3C1" }}
+            />
+            <Card.Body>
+              <Card.Title>cleanandcool.id</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien2} alt="Klien2" height={61} width={183} />
+            <Card.Body>
+              <Card.Title>surgapet.com</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien3} alt="Klien3" height={61} width={61} />
+            <Card.Body>
+              <Card.Title>woodsluck.id</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien4} alt="Klien4" height={44.37} width={200} />
+            <Card.Body>
+              <Card.Title>bactakleen-id.com</Card.Title>
+            </Card.Body>
+          </Card>
+        </CardGroup>
       </div>
       <div style={{ paddingLeft: 950, paddingTop: 30 }}>
-        <Link to="PemWeb5">
+        <Link to="PemWeb5" style={{ textDecoration: "none" }}>
           <a
             style={{
               padding: 10,
@@ -264,148 +290,155 @@ const Mini = () => {
           </a>
         </Link>
       </div>
-      <div>
-        <div
-          className="container1"
-          style={{ paddingLeft: 490, paddingTop: 50, zIndex: 1 }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              zIndex: -1,
-              left: 0,
-              top: 0,
-              paddingTop: 1060,
-              paddingLeft: 359,
-            }}
-          >
-            <img src={NonoRere3} alt="NonoRere3" height={235} />
-          </div>
-          <div
-            style={{
-              paddingTop: 30,
-              paddingBottom: 30,
-              width: "15%",
-              position: "absolute",
-              fontFamily: "Poppins",
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              justifyContent: "center",
-              borderRadius: "11px 11px 11px 11px",
-              boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-              WebkitBoxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-              MozBoxShadow: "0px 0px 10px 0px rgba(0,0,0,0.23)",
-            }}
-          >
-            <img src={NoreLayanan7} alt="NoreLayanan7" />
-            <h1>MINI PRIORITAS</h1>
-          </div>
-        </div>
-        <div style={{ paddingLeft: 795 }}>
-          <div
-            style={{
-              width: "12%",
-              display: "flex",
-              flexDirection: "column",
-              MozBoxShadow: "27px 27px 27px 27px",
-              borderRadius: "27px 27px 27px 27px",
-              border: "3px solid #319f66",
-              paddingLeft: 20,
-              paddingRight: 20,
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <p
-                style={{
-                  paddingLeft: 10,
-                  paddingBottom: 30,
-                  color: "#319f66",
-                  weight: 400,
-                  fontFamily: "Poppins",
-                  fontSize: "14px",
-                  alignSelf: "flex-end",
-                }}
-              >
-                Rp
-              </p>
-              <h1
-                style={{
-                  color: "#319f66",
-                  weight: 700,
-                  fontFamily: "Poppins",
-                  fontSize: "48px",
-                }}
-              >
-                3jt
-              </h1>
-            </div>
-            <div style={{ color: "#319f66" }}>
-              <p>tahun pertama</p>
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingLeft: 1000 }}>
-          <div
-            style={{
-              width: "13%",
-              display: "flex",
-              flexDirection: "column",
-              MozBoxShadow: "27px 27px 27px 27px",
-              borderRadius: "27px 27px 27px 27px",
-              border: "3px solid #319f66",
-              position: "absolute",
-              marginTop: -140,
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <p
-                style={{
-                  paddingLeft: 40,
-                  paddingBottom: 30,
-                  color: "#319f66",
-                  weight: 400,
-                  fontFamily: "Poppins",
-                  fontSize: "14px",
-                  alignSelf: "flex-end",
-                }}
-              >
-                Rp
-              </p>
-              <h1
-                style={{
-                  color: "#319f66",
-                  weight: 700,
-                  fontFamily: "Poppins",
-                  fontSize: "48px",
-                }}
-              >
-                1,5jt
-              </h1>
-            </div>
-            <div style={{ color: "#319f66" }}>
-              <p>tahun pertama</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
         style={{
-          textAlign: "start",
-          paddingLeft: 815,
-          color: "#999999",
-          fontFamily: "Poppins",
-          fontSize: "20px",
-          fontWeight: 400,
-          paddingTop: 20,
+          paddingLeft: 450,
+          margin: -140,
+          position: "absolute",
+          display: "flex",
         }}
       >
-        <li>Server dan domain</li>
-        <li>Template website</li>
-        <li>Garansi bug</li>
-        <li>Optimasi mobile</li>
-        <li>Additional Email: 200rb /email /tahun 500MB</li>
+        <img src={NonoRere3} alt="NonoRere3" width={249} height={235} />
       </div>
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 5 }}>
+            <Card
+              style={{ width: "18rem", alignItems: "center", paddingTop: 30 }}
+            >
+              <img
+                src={NoreLayanan7}
+                alt="NoreLayanan7"
+                height={150}
+                width={150}
+              />
+              <Card.Body>
+                <Card.Title
+                  style={{
+                    fontFamily: "Poppins",
+                    fontWeight: 600,
+                    fontSize: "32px",
+                    paddingBottom: 30,
+                  }}
+                >
+                  MINI PRIORITAS
+                </Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 8, offset: 5 }}>
+            <Card
+              border="success"
+              style={{
+                width: "12rem",
+                borderRadius: 17,
+                alignItems: "center",
+              }}
+            >
+              <Card.Body style={{ display: "flex" }}>
+                <p
+                  style={{
+                    alignSelf: "flex-end",
+                    color: "#319F66",
+                    fontFamily: "Poppins",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                  }}
+                >
+                  Rp
+                </p>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontWeight: 700,
+                    fontSize: "48px",
+                    color: "#319F66",
+                  }}
+                >
+                  3jt
+                </p>
+                <p
+                  style={{
+                    alignSelf: "flex-end",
+                    color: "#319F66",
+                    fontFamily: "Poppins",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                  }}
+                >
+                  tahun pertama
+                </p>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={{ span: 12, offset: 5 }}>
+            <div
+              style={{
+                textAlign: "start",
+                color: "#999999",
+                fontFamily: "Poppins",
+                fontSize: "20px",
+                fontWeight: 400,
+              }}
+            >
+              <li>Server dan domain</li>
+              <li>Template website</li>
+              <li>Garansi bug</li>
+              <li>Optimal mobile</li>
+              <li> Additional Email: 200rb /email /tahun 500MB</li>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }}>
+            <Card
+              border="success"
+              style={{
+                width: "12rem",
+                borderRadius: 17,
+                alignItems: "center",
+              }}
+            >
+              <Card.Body style={{ display: "flex" }}>
+                <p
+                  style={{
+                    alignSelf: "flex-end",
+                    color: "#319F66",
+                    fontFamily: "Poppins",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                  }}
+                >
+                  Rp
+                </p>
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontWeight: 700,
+                    fontSize: "48px",
+                    color: "#319F66",
+                  }}
+                >
+                  1,5jt
+                </p>
+                <p
+                  style={{
+                    alignSelf: "flex-end",
+                    color: "#319F66",
+                    fontFamily: "Poppins",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                  }}
+                >
+                  tahun pertama
+                </p>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
       <div
         style={{
           fontFamily: "Poppins",
@@ -416,47 +449,58 @@ const Mini = () => {
       >
         <p>KLIEN KAMI</p>
       </div>
-      <div className="container4">
-        <div style={{ paddingLeft: 490 }}>
-          <img src={Klien5} alt="Klien5" height={61} />
-        </div>
-        <div style={{ paddingLeft: 520 }}>
-          <img
-            src={Klien6}
-            alt="Klien6"
-            height={61}
-            style={{ backgroundColor: "#A5B3C1" }}
-          />
-        </div>
-        <div style={{ paddingLeft: 480 }}>
-          <img src={Klien7} alt="Klien7" height={61} />
-        </div>
-        <div style={{ paddingLeft: 520 }}>
-          <img src={Klien8} alt="Klien8" height={61} />
-        </div>
-        <div style={{ paddingLeft: 520 }}>
-          <img src={Klien9} alt="Klien9" height={61} />
-        </div>
-      </div>
-      <div className="container4" style={{ paddingLeft: 520 }}>
-        <div>
-          <p> antaralogistic.com</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 58 }}>muliaservice.id</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 120 }}>sanori.co.id</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 110 }}>twinbrotherfood.com</p>
-        </div>
-        <div>
-          <p style={{ paddingLeft: 160, width: "100%" }}>kamalamuliajaya.com</p>
-        </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <CardGroup
+          style={{
+            alignItems: "center",
+            width: "50%",
+          }}
+        >
+          <Card style={{ alignItems: "center" }}>
+            <img src={Klien5} alt="Klien5" height={61} width={185} />
+            <Card.Body>
+              <Card.Title>antaralogistic.com</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ alignItems: "center" }}>
+            <img
+              src={Klien6}
+              alt="Klien6"
+              height={61}
+              width={122}
+              style={{ backgroundColor: "#A5B3C1" }}
+            />
+            <Card.Body>
+              <Card.Title>muliaservice.id</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien7} alt="Klien7" height={61} width={177} />
+            <Card.Body>
+              <Card.Title>sanori.co.id</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien8} alt="Klien8" height={61} width={61} />
+            <Card.Body>
+              <Card.Title>twinbrotherfood.com</Card.Title>
+            </Card.Body>
+          </Card>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
+            <img src={Klien9} alt="Klien9" height={61} width={61} />
+            <Card.Body>
+              <Card.Title>kamalanuliajaya.com</Card.Title>
+            </Card.Body>
+          </Card>
+        </CardGroup>
       </div>
       <div style={{ paddingLeft: 950, paddingTop: 30 }}>
-        <Link to="PemWeb6">
+        <Link to="PemWeb5" style={{ textDecoration: "none" }}>
           <a
             style={{
               padding: 10,

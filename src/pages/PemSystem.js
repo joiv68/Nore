@@ -63,7 +63,7 @@ const PemSystem = () => {
           <img src={NonoRere9} alt="NonoRere9" height={401} />
         </div>
         <div style={{ paddingTop: 100 }}>
-          <img src={Comment} alt="Comment" height={330} />
+          <img src={Comment} alt="Comment" height={280} width={1062} />
         </div>
       </div>
       <div>
@@ -72,10 +72,10 @@ const PemSystem = () => {
             fontFamily: "Poppins",
             fontWeight: 600,
             fontSize: "35px",
-            width: "50%",
+            width: "75%",
             color: "#319F66",
-            paddingLeft: 560,
-            paddingTop: 120,
+            paddingLeft: 470,
+            paddingTop: 140,
           }}
         >
           Halo. Apa kamu sudah paham tentang layanan pembuatan Sistem Informasi?
@@ -93,8 +93,8 @@ const PemSystem = () => {
             padding: 15,
             color: "white",
             position: "absolute",
-            left: 760,
-            top: 660,
+            left: 720,
+            top: 600,
             boxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
             WebkitBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
             MozBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
@@ -116,8 +116,8 @@ const PemSystem = () => {
             color: "#319f66",
             position: "absolute",
             zIndex: 1,
-            left: 1080,
-            top: 645,
+            left: 1000,
+            top: 600,
             boxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
             WebkitBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",
             MozBoxShadow: "-1px 4px 5px 3px rgba(0,0,0,0.38)",

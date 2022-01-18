@@ -152,37 +152,41 @@ const PemWeb3 = () => {
             </Card.Body>
           </Card>
         </Link>
-        <Card style={{ width: "27rem", alignItems: "center", paddingTop: 30 }}>
-          <img src={NoreLayanan} alt="NoreLayanan" />
-          <Card.Body>
-            <Card.Title
-              style={{
-                fontFamily: "Poppins",
-                fontWeight: 600,
-                fontSize: "32px",
-                color: "#3F3F3F",
-                paddingTop: 20,
-                paddingBottom: 20,
-              }}
-            >
-              MINI
-            </Card.Title>
-            <Card.Text
-              style={{
-                fontFamily: "Poppins",
-                fontWeight: 400,
-                fontSize: "22px",
-                width: "90%",
-                color: "#999999",
-                width: "85%",
-              }}
-            >
-              Layanan website berlangganan untuk kebutuhan website statis atau
-              tanpa pengoperasian. Layanan sudah termasuk garansi, server, dan
-              domain.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+        <Link to="/Mini" style={{ textDecoration: "none" }}>
+          <Card
+            style={{ width: "27rem", alignItems: "center", paddingTop: 30 }}
+          >
+            <img src={NoreLayanan} alt="NoreLayanan" />
+            <Card.Body>
+              <Card.Title
+                style={{
+                  fontFamily: "Poppins",
+                  fontWeight: 600,
+                  fontSize: "32px",
+                  color: "#3F3F3F",
+                  paddingTop: 20,
+                  paddingBottom: 20,
+                }}
+              >
+                MINI
+              </Card.Title>
+              <Card.Text
+                style={{
+                  fontFamily: "Poppins",
+                  fontWeight: 400,
+                  fontSize: "22px",
+                  width: "90%",
+                  color: "#999999",
+                  width: "85%",
+                }}
+              >
+                Layanan website berlangganan untuk kebutuhan website statis atau
+                tanpa pengoperasian. Layanan sudah termasuk garansi, server, dan
+                domain.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>
       <div className="footer" style={{ color: "white", marginTop: "35%" }}>
         <div className="row">

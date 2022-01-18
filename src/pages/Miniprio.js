@@ -12,7 +12,7 @@ import Select from "react-select";
 import { ReactComponent as Background4 } from "../assets/Background4.svg";
 import NoreLayanan8 from "../image/NoreLayanan8.png";
 import NonoRere5 from "../image/NonoRere5.png";
-import { Button, Col, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const Miniprio = () => {
   return (
@@ -176,8 +176,10 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Nama</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            Nama
+          </Form.Label>
+          <Form.Control placeholder="contoh: Mark" />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -188,8 +190,10 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Perusahaan/Instansi</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            Perusahaan/Instansi
+          </Form.Label>
+          <Form.Control placeholder="contoh: CV.Nore Inovasi / Personal" />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -200,8 +204,10 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Benchmark</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            Benchmark
+          </Form.Label>
+          <Form.Control placeholder="contoh: www.nore.web.id ; www.lifesolution.com" />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -212,8 +218,10 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Nama Domain</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            Nama Domain
+          </Form.Label>
+          <Form.Control placeholder="contoh: nore.web.id" />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -224,8 +232,14 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Keterangan</Form.Label>
-          <Form.Control as="textarea" rows={3} />
+          <Form.Label column sm="2">
+            Keterangan
+          </Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={5}
+            placeholder="contoh: Warna dasar biru"
+          />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -236,8 +250,10 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>No. HP</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            No. HP
+          </Form.Label>
+          <Form.Control placeholder="contoh: 081234567890" />
         </Form.Group>
         <Form.Group
           className="mb-5"
@@ -248,10 +264,20 @@ const Miniprio = () => {
             fontWeight: 400,
           }}
         >
-          <Form.Label>Email</Form.Label>
-          <Form.Control />
+          <Form.Label column sm="2">
+            Email
+          </Form.Label>
+          <Form.Control placeholder="contoh: mark@example.com" />
         </Form.Group>
-        <Button style={{ background: "#39B772", color: "white" }}>Kirim</Button>
+        <Button
+          style={{
+            background: "#39B772",
+            color: "white",
+            justifyItems: "end",
+          }}
+        >
+          Kirim
+        </Button>
       </Form>
       <div className="footer" style={{ color: "white", marginTop: "23%" }}>
         <div className="row">
