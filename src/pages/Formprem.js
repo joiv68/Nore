@@ -1,17 +1,17 @@
 import React, { useState } from "react";
+import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo2 from "../image/Logo2.png";
-import NonoRere6 from "../image/NonoRere6.png";
-import Gambar from "../image/Gambar.png";
+import { ReactComponent as Background7 } from "../assets/Background7.svg";
+import Logo from "../image/Logo.png";
+import SI2 from "../image/SI2.png";
 import Inet from "../image/Inet.png";
 import WA from "../image/WA.png";
 import Message from "../image/Message.png";
 import IG from "../image/IG.png";
 import FB from "../image/FB.png";
-import Logo from "../image/Logo.png";
-import { Button, Form } from "react-bootstrap";
+import NonoRere11 from "../image/NonoRere11.png";
 
-const PemWeb6 = () => {
+const Formprem = () => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -26,122 +26,56 @@ const PemWeb6 = () => {
 
   return (
     <div>
-      <div className="container7">
+      <div
+        style={{ position: "absolute", top: 0, zIndex: -1, display: "flex" }}
+      >
+        <Background7 />
+      </div>
+      <div className="container1">
         <div
           style={{
             display: "flex",
             paddingLeft: 75.21,
             paddingTop: 30,
-            fontSize: "1.3vw",
+            fontSize: "24px",
             fontFamily: "Poppins",
           }}
         >
-          <Link to="/PemWeb5">
-            <p style={{ color: "#319f66" }}> {`< Kembali`}</p>
+          <Link to="/">
+            <p style={{ color: "white" }}> {`< Kembali`}</p>
           </Link>
         </div>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
+          style={{ display: "flex", justifyContent: "end", alignItems: "end" }}
         >
           <Link to="/">
-            <img src={Logo2} alt="Logo2" height={150} />
+            <img src={Logo} alt="Logo" />
           </Link>
         </div>
       </div>
-      <div
-        className="container1"
-        style={{
-          display: "flex",
-          color: "#A5A5A5",
-          fontFamily: "Poppins",
-          fontSize: "26px",
-          fontWeight: 600,
-          paddingLeft: 75.21,
-          justifyContent: "space-between",
-        }}
-      >
-        <div>
-          <p>Yang Anda butuhkan adalah:</p>
+      <div className="container8" style={{ display: "flex" }}>
+        <div style={{ paddingLeft: 75 }}>
+          <img src={SI2} alt="SI2" width={433} height={264} />
         </div>
         <div
           style={{
             display: "flex",
+            fontFamily: "Poppins",
+            textAlign: "start",
+            fontWeight: 700,
+            fontSize: "48px",
+            width: "35%",
+            color: "#ffffff",
+            alignItems: "center",
           }}
         >
-          <p>Budget: </p>
+          <p>FORM PEMBUATAN SISTEM INFORMASI (PREMIUM)</p>
         </div>
       </div>
       <div
-        className="container1"
-        style={{
-          display: "flex",
-          color: "#319f66",
-          fontFamily: "Poppins",
-          fontSize: "38px",
-          fontWeight: 700,
-          paddingLeft: 75.21,
-          justifyContent: "space-between",
-        }}
+        style={{ display: "flex", justifyContent: "end", alignItems: "end" }}
       >
-        <div style={{ width: "40%", textAlign: "start", marginTop: -10 }}>
-          <p>PEMBUATAN WEBSITE LANGGANAN SIMPEL</p>
-        </div>
-
-        <div>
-          <p>Rp2.000.000</p>
-        </div>
-      </div>
-      <div>
-        <div
-          className="container7"
-          style={{ position: "absolute", zIndex: -1 }}
-        >
-          <div style={{ paddingLeft: 650, marginTop: -170 }}>
-            <img src={Gambar} alt="Gambar" height={400} />
-          </div>
-          <div style={{ paddingLeft: 370, marginTop: -70 }}>
-            <img src={NonoRere6} alt="NonoRere6" />
-          </div>
-        </div>
-        <div>
-          <p
-            style={{
-              color: "#A5A5A5",
-              fontFamily: "Poppins",
-              fontSize: "26px",
-              fontWeight: 600,
-              textAlign: "end",
-            }}
-          >
-            Uang Muka:
-          </p>
-          <p
-            style={{
-              color: "#319f66",
-              fontFamily: "Poppins",
-              fontSize: "38px",
-              fontWeight: 700,
-              textAlign: "end",
-            }}
-          >
-            Rp500.000
-          </p>
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          fontFamily: "Poppins",
-          fontWeight: 700,
-          fontSize: "30px",
-          paddingLeft: 75.21,
-          paddingTop: 200,
-        }}
-      >
-        <p>Silahkan isi Form untuk melanjutkan pemesanan</p>
+        <img src={NonoRere11} alt="NonoRere11" width={255} height={255} />
       </div>
       <div
         style={{
@@ -155,25 +89,23 @@ const PemWeb6 = () => {
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Group
             className="mb-5"
+            controlId="validationCustom01"
             style={{
               display: "flex",
               fontFamily: "Roboto",
               fontSize: "20px",
               fontWeight: 400,
               textAlign: "start",
+              paddingTop: 10,
             }}
           >
             <Form.Label column sm="2">
-              Jenis Desain
+              Nama
             </Form.Label>
-            <Form.Select aria-label="Default select example">
-              <option>Silahkan Pilih -</option>
-              <option value="1">Perusahaan 1</option>
-              <option value="2">Perusahaan 2</option>
-              <option value="3">Perusahaan 3</option>
-              <option value="4">Perusahaan 4</option>
-              <option value="5">Perusahaan 5</option>
-            </Form.Select>
+            <Form.Control type="text" required placeholder="contoh: Mark" />
+            <Form.Control.Feedback type="invalid">
+              Kolom wajib diisi!
+            </Form.Control.Feedback>
           </Form.Group>
           <Form.Group
             className="mb-5"
@@ -187,16 +119,20 @@ const PemWeb6 = () => {
             }}
           >
             <Form.Label column sm="2">
-              Nama
+              Nama Perusahaan/Instansi
             </Form.Label>
-            <Form.Control type="text" required placeholder="contoh: Mark" />
+            <Form.Control
+              type="text"
+              required
+              placeholder="contoh: CV. More Inovasi"
+            />
             <Form.Control.Feedback type="invalid">
               Kolom wajib diisi!
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group
             className="mb-5"
-            controlId="validationCustom02"
+            controlId="validationCustom01"
             style={{
               display: "flex",
               fontFamily: "Roboto",
@@ -206,12 +142,12 @@ const PemWeb6 = () => {
             }}
           >
             <Form.Label column sm="2">
-              Perusahaan/Instansi
+              No. Hp
             </Form.Label>
             <Form.Control
               type="text"
               required
-              placeholder="contoh: CV.Nore Inovasi / Personal"
+              placeholder="contoh: 08123456789"
             />
             <Form.Control.Feedback type="invalid">
               Kolom wajib diisi!
@@ -219,78 +155,7 @@ const PemWeb6 = () => {
           </Form.Group>
           <Form.Group
             className="mb-5"
-            controlId="validationCustom03"
-            style={{
-              display: "flex",
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              fontWeight: 400,
-              textAlign: "start",
-            }}
-          >
-            <Form.Label column sm="2">
-              Nama Domain
-            </Form.Label>
-            <Form.Control
-              type="text"
-              required
-              placeholder="contoh: nore.web.id"
-            />
-            <Form.Control.Feedback type="invalid">
-              Kolom wajib diisi!
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group
-            className="mb-5"
-            controlId="validationCustom04"
-            style={{
-              display: "flex",
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              fontWeight: 400,
-              textAlign: "start",
-            }}
-          >
-            <Form.Label column sm="2">
-              Keterangan
-            </Form.Label>
-            <Form.Control
-              type="text"
-              required
-              as="textarea"
-              rows={5}
-              placeholder="contoh: Warna dasar biru"
-            />
-            <Form.Control.Feedback type="invalid">
-              Kolom wajib diisi!
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group
-            className="mb-5"
-            controlId="validationCustom05"
-            style={{
-              display: "flex",
-              fontFamily: "Roboto",
-              fontSize: "20px",
-              fontWeight: 400,
-              textAlign: "start",
-            }}
-          >
-            <Form.Label column sm="2">
-              No. HP
-            </Form.Label>
-            <Form.Control
-              type="text"
-              required
-              placeholder="contoh: 081234567890"
-            />
-            <Form.Control.Feedback type="invalid">
-              Kolom wajib diisi!
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group
-            className="mb-5"
-            controlId="validationCustom06"
+            controlId="validationCustom01"
             style={{
               display: "flex",
               fontFamily: "Roboto",
@@ -310,6 +175,125 @@ const PemWeb6 = () => {
             <Form.Control.Feedback type="invalid">
               Kolom wajib diisi!
             </Form.Control.Feedback>
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            controlId="validationCustom04"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+              textAlign: "start",
+            }}
+          >
+            <Form.Label column sm="2">
+              Keterangan Kebutuhan
+            </Form.Label>
+            <Form.Control
+              type="text"
+              required
+              as="textarea"
+              rows={5}
+              placeholder="contoh: Warna dasar biru, button dibuat lebih mencolok"
+            />
+            <Form.Control.Feedback type="invalid">
+              Kolom wajib diisi!
+            </Form.Control.Feedback>
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+              textAlign: "start",
+            }}
+          >
+            <Form.Label column sm="2">
+              Range Budget
+            </Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Silahkan Pilih -</option>
+              <option value="1">10jt - 50jt</option>
+              <option value="2">50jt - 200jt</option>
+              <option value="3">200jt - 500jt</option>
+              <option value="4">500jt - 1M</option>
+              <option value="5">1M++</option>
+            </Form.Select>
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+              textAlign: "start",
+            }}
+          >
+            <Form.Label column sm="2">
+              Jenis Layanan
+            </Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Silahkan Pilih -</option>
+              <option value="1">Langganan</option>
+              <option value="2">Lepas</option>
+            </Form.Select>
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+              textAlign: "start",
+            }}
+          >
+            <Form.Label column sm="2">
+              Jenis Desain
+            </Form.Label>
+            {["checkbox"].map((type) => (
+              <div key={`inline-${type}`} className="mb-3">
+                <Form.Check
+                  inline
+                  label="Website"
+                  name="Website"
+                  type={type}
+                  id={`inline-${type}-1`}
+                />
+                <Form.Check
+                  inline
+                  label="Android"
+                  name="Android"
+                  type={type}
+                  id={`inline-${type}-2`}
+                />
+                <Form.Check
+                  inline
+                  label="iOS"
+                  name="iOS"
+                  type={type}
+                  id={`inline-${type}-3`}
+                />
+              </div>
+            ))}
+          </Form.Group>
+          <Form.Group
+            className="mb-5"
+            style={{
+              display: "flex",
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 400,
+              textAlign: "start",
+            }}
+          >
+            <Form.Label column sm="2">
+              Jenis Meeting
+            </Form.Label>
           </Form.Group>
           <Button
             style={{
@@ -347,16 +331,14 @@ const PemWeb6 = () => {
                 </p>
               </div>
             </div>
-            <div className="row">
+            <div className="row" style={{ display: "flex" }}>
               <div style={{ width: "30%" }}>
                 <h1 style={{ fontFamily: "poppins", fontSize: "24px" }}>
                   PROFIL
                 </h1>
                 <div
                   style={{
-                    display: "flex",
                     alignItems: "center",
-                    paddingLeft: "41px",
                   }}
                 >
                   <img src={Inet} alt="Inet" />
@@ -365,6 +347,7 @@ const PemWeb6 = () => {
                       fontFamily: "poppins",
                       fontSize: "18px",
                       paddingLeft: "5px",
+                      alignItems: "center",
                     }}
                   >
                     nore.web.id
@@ -466,4 +449,4 @@ const PemWeb6 = () => {
   );
 };
 
-export default PemWeb6;
+export default Formprem;

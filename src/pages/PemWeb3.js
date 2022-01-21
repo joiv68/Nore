@@ -38,7 +38,13 @@ const PemWeb3 = () => {
               <p style={{ color: "white" }}> {`< Kembali`}</p>
             </Link>
           </div>
-          <div style={{ display: "flex", paddingLeft: 300 }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "end",
+              alignItems: "end",
+            }}
+          >
             <Link to="/">
               <img src={Logo} alt="Logo" />
             </Link>
@@ -85,7 +91,7 @@ const PemWeb3 = () => {
             </li>
             <li>Jaminan dan penjagaan uptime server sampai dengan 99,99%</li>
           </div>
-          <div>
+          <div style={{ paddingTop: 100 }}>
             <img src={NonoRere3} alt="NonoRere3" height={290} />
           </div>
         </div>
@@ -119,7 +125,12 @@ const PemWeb3 = () => {
       >
         <Link to="/PemWeb4" style={{ textDecoration: "none" }}>
           <Card
-            style={{ width: "27rem", alignItems: "center", paddingTop: 30 }}
+            style={{
+              width: "27rem",
+              alignItems: "center",
+
+              paddingTop: 30,
+            }}
           >
             <img src={NoreLayanan1} alt="NoreLayanan1" />
             <Card.Body>
@@ -131,6 +142,7 @@ const PemWeb3 = () => {
                   color: "#3F3F3F",
                   paddingTop: 20,
                   paddingBottom: 20,
+                  textAlign: "center",
                 }}
               >
                 NORE
@@ -140,9 +152,10 @@ const PemWeb3 = () => {
                   fontFamily: "Poppins",
                   fontWeight: 400,
                   fontSize: "22px",
-                  width: "90%",
                   color: "#999999",
+                  textAlign: "center",
                   width: "85%",
+                  margin: "0 auto",
                 }}
               >
                 Layanan website berlangganan andalan NORE (No Repot, No Rempong)
@@ -178,6 +191,7 @@ const PemWeb3 = () => {
                   width: "90%",
                   color: "#999999",
                   width: "85%",
+                  margin: "0 auto",
                 }}
               >
                 Layanan website berlangganan untuk kebutuhan website statis atau

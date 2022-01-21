@@ -33,7 +33,7 @@ function Home() {
       >
         <img src={NonoRere1} alt="nonorere1" />
       </div>
-      <div>
+      <div style={{ alignItems: "center" }}>
         <img src={Logo} alt="logo" />
         <h1
           style={{
@@ -57,6 +57,7 @@ function Home() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            paddingTop: 40,
           }}
         >
           <p style={{ fontWeight: 400, width: "40%" }}>

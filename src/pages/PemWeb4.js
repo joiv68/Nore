@@ -421,13 +421,13 @@ const PemWeb4 = () => {
             width: "50%",
           }}
         >
-          <Card style={{ alignItems: "center" }}>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
             <img src={Klien5} alt="Klien5" height={61} width={185} />
             <Card.Body>
               <Card.Title>antaralogistic.com</Card.Title>
             </Card.Body>
           </Card>
-          <Card style={{ alignItems: "center" }}>
+          <Card style={{ borderWidth: 0, alignItems: "center" }}>
             <img
               src={Klien6}
               alt="Klien6"

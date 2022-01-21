@@ -36,7 +36,9 @@ function PemWeb() {
             <p style={{ color: "white" }}> {`< Kembali`}</p>
           </Link>
         </div>
-        <div style={{ display: "flex", paddingLeft: 300 }}>
+        <div
+          style={{ display: "flex", justifyContent: "end", alignItems: "end" }}
+        >
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>

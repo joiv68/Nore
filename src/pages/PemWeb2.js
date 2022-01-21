@@ -13,7 +13,7 @@ import Logo from "../image/Logo.png";
 const PemWeb2 = () => {
   return (
     <div>
-      <div className="container2">
+      <div className="container7">
         <div
           style={{
             display: "flex",
@@ -27,7 +27,13 @@ const PemWeb2 = () => {
             <p style={{ color: "#319f66" }}> {`< Kembali`}</p>
           </Link>
         </div>
-        <div style={{ display: "flex", paddingLeft: 200 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Link to="/">
             <img src={Logo2} alt="Logo2" />
           </Link>

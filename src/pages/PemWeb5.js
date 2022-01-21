@@ -87,7 +87,9 @@ const PemWeb5 = () => {
             <p style={{ color: "white" }}> {`< Kembali`}</p>
           </Link>
         </div>
-        <div style={{ display: "flex", paddingLeft: 300 }}>
+        <div
+          style={{ display: "flex", justifyContent: "end", alignItems: "end" }}
+        >
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
@@ -191,7 +193,7 @@ const PemWeb5 = () => {
         }}
       >
         <Slider {...settings}>
-          <div style={{ textAlign: "center" }}>
+          <div>
             <p>PERUSAHAAN 1</p>
             <img src={Contoh1} alt="Contoh1" width="100%" height={315} />
             <div
@@ -266,7 +268,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 60 }}>PERUSAHAAN 3</p>
+            <p>PERUSAHAAN 3</p>
             <img src={Contoh3} alt="Contoh3" width="100%" height={315} />
             <div
               style={{
@@ -303,7 +305,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 40 }}>PERUSAHAAN 4</p>
+            <p>PERUSAHAAN 4</p>
             <img src={Contoh4} alt="Contoh4" width="100%" height={315} />
             <div
               style={{
@@ -340,7 +342,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 70 }}>PERUSAHAAN 5</p>
+            <p>PERUSAHAAN 5</p>
             <img src={Contoh5} alt="Contoh5" width="100%" height={315} />
             <div
               style={{
@@ -433,7 +435,7 @@ const PemWeb5 = () => {
       >
         <Slider {...settings1}>
           <div>
-            <p style={{ paddingRight: 50 }}>PENDIDIKAN 1</p>
+            <p>PENDIDIKAN 1</p>
             <img src={Pend1} alt="Pend1" width="100%" height={315} />
             <div
               style={{
@@ -468,7 +470,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 60 }}>PENDIDIKAN 2</p>
+            <p>PENDIDIKAN 2</p>
             <img src={Pend2} alt="Pend2" width="100%" height={315} />
             <div
               style={{
@@ -503,7 +505,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 60 }}>PENDIDIKAN 3</p>
+            <p>PENDIDIKAN 3</p>
             <img src={Pend3} alt="Pend3" width="100%" height={315} />
             <div
               style={{
@@ -538,7 +540,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 40 }}>PENDIDIKAN 4</p>
+            <p>PENDIDIKAN 4</p>
             <img src={Pend4} alt="Pend4" width="100%" height={315} />
             <div
               style={{
@@ -573,7 +575,7 @@ const PemWeb5 = () => {
             </div>
           </div>
           <div>
-            <p style={{ paddingRight: 55 }}>PENDIDIKAN 5</p>
+            <p>PENDIDIKAN 5</p>
             <img src={Pend5} alt="Pend5" width="100%" height={315} />
             <div
               style={{
@@ -668,7 +670,7 @@ const PemWeb5 = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <p style={{ paddingRight: 50 }}>TOKO ONLINE 1</p>
+              <p>TOKO ONLINE 1</p>
               <img src={Olshop1} alt="Olshop1" width="100%" height={315} />
               <div
                 style={{
@@ -703,7 +705,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>TOKO ONLINE 2</p>
+              <p>TOKO ONLINE 2</p>
               <img src={Olshop2} alt="Olshop2" width="100%" height={315} />
               <div
                 style={{
@@ -738,7 +740,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>TOKO ONLINE 3</p>
+              <p>TOKO ONLINE 3</p>
               <img src={Olshop3} alt="Olshop3" width="100%" height={315} />
               <div
                 style={{
@@ -773,7 +775,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 40 }}>TOKO ONLINE 4</p>
+              <p>TOKO ONLINE 4</p>
               <img src={Olshop4} alt="Olshop4" width="100%" height={315} />
               <div
                 style={{
@@ -808,7 +810,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 50 }}>TOKO ONLINE 5</p>
+              <p>TOKO ONLINE 5</p>
               <img src={Olshop5} alt="Olshop5" width="100%" height={315} />
               <div
                 style={{
@@ -906,7 +908,7 @@ const PemWeb5 = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <p style={{ paddingRight: 50 }}>KAFE 1</p>
+              <p>KAFE 1</p>
               <img src={Kafe1} alt="Kafe1" width="100%" height={315} />
               <div
                 style={{
@@ -941,7 +943,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>KAFE 2</p>
+              <p>KAFE 2</p>
               <img src={Kafe2} alt="Kafe2" width="100%" height={315} />
               <div
                 style={{
@@ -976,7 +978,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>KAFE 3</p>
+              <p>KAFE 3</p>
               <img src={Kafe3} alt="Kafe3" width="100%" height={315} />
               <div
                 style={{
@@ -1011,7 +1013,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 40 }}>KAFE 4</p>
+              <p>KAFE 4</p>
               <img src={Kafe4} alt="Kafe4" width="100%" height={315} />
               <div
                 style={{
@@ -1046,7 +1048,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 50 }}>KAFE 5</p>
+              <p>KAFE 5</p>
               <img src={Kafe5} alt="Kafe5" width="100%" height={315} />
               <div
                 style={{
@@ -1145,7 +1147,7 @@ const PemWeb5 = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <p style={{ paddingRight: 50 }}>EVENT 1</p>
+              <p>EVENT 1</p>
               <img src={Event1} alt="Event1" width="100%" height={315} />
               <div
                 style={{
@@ -1180,7 +1182,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>EVENT 2</p>
+              <p>EVENT 2</p>
               <img src={Event2} alt="Event2" width="100%" height={315} />
               <div
                 style={{
@@ -1215,7 +1217,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>EVENT 3</p>
+              <p>EVENT 3</p>
               <img src={Event3} alt="Event3" width="100%" height={315} />
               <div
                 style={{
@@ -1250,7 +1252,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 40 }}>EVENT 4</p>
+              <p>EVENT 4</p>
               <img src={Event4} alt="Event4" width="100%" height={315} />
               <div
                 style={{
@@ -1285,7 +1287,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 50 }}>EVENT 5</p>
+              <p>EVENT 5</p>
               <img src={Event5} alt="Event5" width="100%" height={315} />
               <div
                 style={{
@@ -1384,7 +1386,7 @@ const PemWeb5 = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <p style={{ paddingRight: 50 }}>PERSONAL 1</p>
+              <p>PERSONAL 1</p>
               <img src={Personal1} alt="Personal1" width="100%" height={377} />
               <div
                 style={{
@@ -1419,7 +1421,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>PERSONAL 2</p>
+              <p>PERSONAL 2</p>
               <img src={Personal2} alt="Personal2" width="100%" height={377} />
               <div
                 style={{
@@ -1454,7 +1456,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 60 }}>PERSONAL 3</p>
+              <p>PERSONAL 3</p>
               <img src={Personal3} alt="Personal3" width="100%" height={377} />
               <div
                 style={{
@@ -1489,7 +1491,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 40 }}>PERSONAL 4</p>
+              <p>PERSONAL 4</p>
               <img src={Personal4} alt="Personal4" width="100%" height={377} />
               <div
                 style={{
@@ -1524,7 +1526,7 @@ const PemWeb5 = () => {
               </div>
             </div>
             <div>
-              <p style={{ paddingRight: 50 }}>PERSONAL 5</p>
+              <p>PERSONAL 5</p>
               <img src={Personal5} alt="Personal5" width="100%" height={377} />
               <div
                 style={{

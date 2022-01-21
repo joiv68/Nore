@@ -38,7 +38,13 @@ const Mini = () => {
             <p style={{ color: "#319f66" }}> {`< Kembali`}</p>
           </Link>
         </div>
-        <div style={{ display: "flex", paddingLeft: 200 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Link to="/">
             <img src={Logo2} alt="Logo2" height={150} />
           </Link>
@@ -47,12 +53,11 @@ const Mini = () => {
       <div
         style={{
           color: "#319f66",
-          textAlign: "center",
-          width: "90%",
           fontFamily: "Poppins",
           fontSize: "48px",
           fontWeight: 700,
-          paddingLeft: 322,
+          width: "70%",
+          margin: "0 auto",
         }}
       >
         <p>WEBSITE LANGGANAN MINI SEPERTI APA YANG ANDA INGINKAN?</p>
@@ -99,45 +104,44 @@ const Mini = () => {
               <Card
                 border="success"
                 style={{
-                  width: "12rem",
+                  width: "11rem",
                   borderRadius: 17,
                   alignItems: "center",
                 }}
               >
                 <Card.Body style={{ display: "flex" }}>
-                  <p
+                  <Card.Text
                     style={{
                       alignSelf: "flex-end",
-                      color: "#319F66",
                       fontFamily: "Poppins",
                       fontWeight: 400,
                       fontSize: "14px",
+                      color: "#319f66",
                     }}
                   >
                     Rp
-                  </p>
-                  <p
+                  </Card.Text>
+                  <Card.Title
                     style={{
                       fontFamily: "Poppins",
                       fontWeight: 700,
                       fontSize: "48px",
-                      color: "#319F66",
+                      color: "#319f66",
                     }}
                   >
                     1,2jt
-                  </p>
-                  <p
-                    style={{
-                      alignSelf: "flex-end",
-                      color: "#319F66",
-                      fontFamily: "Poppins",
-                      fontWeight: 400,
-                      fontSize: "14px",
-                    }}
-                  >
-                    tahun pertama
-                  </p>
+                  </Card.Title>
                 </Card.Body>
+                <Card.Footer
+                  style={{
+                    background: "#ffffff",
+                    border: 0,
+                    marginTop: -20,
+                    color: "#319f66",
+                  }}
+                >
+                  tahun pertama
+                </Card.Footer>
               </Card>
             </Col>
             <Col md={{ span: 12, offset: 5 }}>
@@ -159,49 +163,48 @@ const Mini = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={{ span: 8, offset: 2 }}>
+            <Col md={{ span: 8, offset: 1 }}>
               <Card
                 border="success"
                 style={{
-                  width: "12rem",
+                  width: "14rem",
                   borderRadius: 17,
                   alignItems: "center",
                 }}
               >
                 <Card.Body style={{ display: "flex" }}>
-                  <p
+                  <Card.Text
                     style={{
                       alignSelf: "flex-end",
-                      color: "#319F66",
                       fontFamily: "Poppins",
                       fontWeight: 400,
                       fontSize: "14px",
+                      color: "#319f66",
                     }}
                   >
                     Rp
-                  </p>
-                  <p
+                  </Card.Text>
+                  <Card.Title
                     style={{
                       fontFamily: "Poppins",
                       fontWeight: 700,
                       fontSize: "48px",
-                      color: "#319F66",
+                      color: "#319f66",
                     }}
                   >
-                    600rb
-                  </p>
-                  <p
-                    style={{
-                      alignSelf: "flex-end",
-                      color: "#319F66",
-                      fontFamily: "Poppins",
-                      fontWeight: 400,
-                      fontSize: "14px",
-                    }}
-                  >
-                    tahun pertama
-                  </p>
+                    600jt
+                  </Card.Title>
                 </Card.Body>
+                <Card.Footer
+                  style={{
+                    background: "#ffffff",
+                    border: 0,
+                    marginTop: -20,
+                    color: "#319f66",
+                  }}
+                >
+                  tahun berikutnya
+                </Card.Footer>
               </Card>
             </Col>
           </Row>
@@ -332,45 +335,44 @@ const Mini = () => {
             <Card
               border="success"
               style={{
-                width: "12rem",
+                width: "11rem",
                 borderRadius: 17,
                 alignItems: "center",
               }}
             >
               <Card.Body style={{ display: "flex" }}>
-                <p
+                <Card.Text
                   style={{
                     alignSelf: "flex-end",
-                    color: "#319F66",
                     fontFamily: "Poppins",
                     fontWeight: 400,
                     fontSize: "14px",
+                    color: "#319f66",
                   }}
                 >
                   Rp
-                </p>
-                <p
+                </Card.Text>
+                <Card.Title
                   style={{
                     fontFamily: "Poppins",
                     fontWeight: 700,
                     fontSize: "48px",
-                    color: "#319F66",
+                    color: "#319f66",
                   }}
                 >
                   3jt
-                </p>
-                <p
-                  style={{
-                    alignSelf: "flex-end",
-                    color: "#319F66",
-                    fontFamily: "Poppins",
-                    fontWeight: 400,
-                    fontSize: "14px",
-                  }}
-                >
-                  tahun pertama
-                </p>
+                </Card.Title>
               </Card.Body>
+              <Card.Footer
+                style={{
+                  background: "#ffffff",
+                  border: 0,
+                  marginTop: -20,
+                  color: "#319f66",
+                }}
+              >
+                tahun pertama
+              </Card.Footer>
             </Card>
           </Col>
           <Col md={{ span: 12, offset: 5 }}>
@@ -387,54 +389,53 @@ const Mini = () => {
               <li>Template website</li>
               <li>Garansi bug</li>
               <li>Optimal mobile</li>
-              <li> Additional Email: 200rb /email /tahun 500MB</li>
+              <li>Additional Email: 200rb /email /tahun 500MB</li>
             </div>
           </Col>
         </Row>
         <Row>
-          <Col md={{ span: 8, offset: 2 }}>
+          <Col md={{ span: 8, offset: 1 }}>
             <Card
               border="success"
               style={{
-                width: "12rem",
+                width: "14rem",
                 borderRadius: 17,
                 alignItems: "center",
               }}
             >
               <Card.Body style={{ display: "flex" }}>
-                <p
+                <Card.Text
                   style={{
                     alignSelf: "flex-end",
-                    color: "#319F66",
                     fontFamily: "Poppins",
                     fontWeight: 400,
                     fontSize: "14px",
+                    color: "#319f66",
                   }}
                 >
                   Rp
-                </p>
-                <p
+                </Card.Text>
+                <Card.Title
                   style={{
                     fontFamily: "Poppins",
                     fontWeight: 700,
                     fontSize: "48px",
-                    color: "#319F66",
+                    color: "#319f66",
                   }}
                 >
                   1,5jt
-                </p>
-                <p
-                  style={{
-                    alignSelf: "flex-end",
-                    color: "#319F66",
-                    fontFamily: "Poppins",
-                    fontWeight: 400,
-                    fontSize: "14px",
-                  }}
-                >
-                  tahun pertama
-                </p>
+                </Card.Title>
               </Card.Body>
+              <Card.Footer
+                style={{
+                  background: "#ffffff",
+                  border: 0,
+                  marginTop: -20,
+                  color: "#319f66",
+                }}
+              >
+                tahun berikutnya
+              </Card.Footer>
             </Card>
           </Col>
         </Row>

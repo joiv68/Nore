@@ -47,7 +47,7 @@
 
 .container7 {
   display: grid;
-  grid-template-columns: 30% 30%;
+  grid-template-columns: 30% 40%;
 }
 
 .container8 {
@@ -78,6 +78,16 @@
 .contslide3 {
   width: 45%;
   margin: auto;
+}
+
+.contslide4 {
+  width: 50%;
+  margin: auto;
+}
+
+.contfoot {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
 }
 
 .slick-slide {
@@ -116,7 +126,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #272727;
-  padding: 20px 30px;
+  padding: 25px 45px;
 }
 
 .footer1 {

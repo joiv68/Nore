@@ -14,6 +14,7 @@ import PemSystem from "./pages/PemSystem";
 import Mini from "./pages/Mini";
 import Miniprio from "./pages/Miniprio";
 import LayananSI from "./pages/LayananSI";
+import Formprem from "./pages/Formprem";
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
               <Sudah />
             </Route>
             <Route path="/WebLepas">
-              <WebLepas />{" "}
+              <WebLepas />
             </Route>
             <Route path="/PemSystem">
               <PemSystem />
@@ -59,6 +60,9 @@ function App() {
             </Route>
             <Route path="/LayananSI">
               <LayananSI />
+            </Route>
+            <Route path="/FormPrem">
+              <Formprem />
             </Route>
           </Switch>
         </div>
